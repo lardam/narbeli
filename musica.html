@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Produccion y grabacion musical">
+        <meta name="keywords" content="produccion, calidad, narbeli, narbelio, alejo, musica, contacto, canciones, temas, trabajos, la dro, bianxhi, aquelo, parsec, after nieto">
+        <title>Narbeli - Música</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/pruebacss.css">
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <header class="container-fluid">
+            <nav class="container">
+                <a href="index.html"><img src="images/logo3.png" class="logo" id="logo" alt="narlogo"></a>
+                <div class="navbar-expand float-right" id="menu">
+                    <ul class="navbar navbar-nav">
+                        <li class="nav-item active btn" id="navblanco"><a href="artistas.html" class="nav-link" id="nav-link">Artistas</a></li>
+                        <li class="nav-item active btn" id="navblanco"><a href="musica.html" class="nav-link" id="nav-link">Música</a></li>
+                        <li class="nav-item active btn" id="navblanco"><a href="fechas.html" class="nav-link" id="nav-link">Fechas</a></li>
+                        <li class="nav-item active btn" id="navblanco"><a href="info.html" class="nav-link" id="nav-link">Info</a></li>
+                        <li class="nav-item active btn" id="navcont"><a data-toggle="modal" data-target="#contact_form" class="nav-link" id="nav-linkB">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="middle">
+            <section id="temario" class="container">
+                <ul>
+                    <li><a href="https://youtu.be/UD4cTvuy1aI" target="_blank">Lezama - Memu</a></li>
+                    <li><a href="https://youtu.be/5b_KKDZzcN8" target="_blank">Demon(s) del mal - El Circo del Mal</a></li>
+                    <li><a href="https://youtu.be/DpD6k9TJ_RQ" target="_blank">Ardiendo - Bianxhi</a></li>
+                    <li><a href="https://open.spotify.com/album/5JUPEkSSzg6suzhM0MsyRf?si=P6b17f82Qo-7GG5JfowRtQ" target="_blank">XXIII - La Dro</a></li>
+                    <li><a href="https://open.spotify.com/album/5N1Z3IC9x8ECSbCeAOuIu1?si=nMH8O83wSu6em37nx6OABg" target="_blank">Rosa - Aquelo</a></li>
+                    <li><a href="https://youtu.be/vXL-GXJbFGc" target="_blank">Hypernova - Parsec</a></li>
+                    <li><a href="https://youtu.be/n2C6tnJT3QI?list=PLfNM6MdeW4i5xKhHUAoTPijjJWSK7odtI" target="_blank">Hipérbole - Guada Solís</a></li>
+                    <li><a href="https://youtu.be/wgA0R-H-PEY" target="_blank">After Nieto Theme - After Nieto</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="modal fade" id="contact_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" id="modal_contacto">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Contacto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col"><input type="text" placeholder="Nombre" name="nombre" class="form-control"><br></div>
+                                <div class="col"><input type="text" placeholder="Apellido" name="apellido" class="form-control"><br></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col"><input type="text" placeholder="E-mail" name="mail" class="form-control"><br></div>
+                                <div class="col"><input type="text" placeholder="Teléfono" name="telefono" class="form-control"><br></div>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="buenos_aires" class="form-check-input">
+                                <label for="buenos_aires" class="form-check-label">Vivis en CABA?</label>
+                            </div>
+                            <div class="form-group">
+                            <textarea name="mensaje" placeholder="Contame un poquito" class="form-control mt-1" id="exampleFormControlTextarea3" ></textarea><br>
+                            </div>
+                            <div>
+                                <select class="browser-default custom-select">
+                                    <option selected>Seleccioná</option>
+                                    <option value="1">Grabación y master</option>
+                                    <option value="2">Mastering</option>
+                                    <option value="3">Grabación, master y mezcla</option>
+                                  </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                        <button type="button" class="btn btn-secondary" value="#">Borrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid footer mt-auto" id="footer">
+            <div class="container">
+                <ul class="navbar float-left">
+                    <li class="nav-item active btn"><a href="https://www.facebook.com/NarbeliCute" target="_blank" class="nav-link fa fa-facebook"></a></li>
+                    <li class="nav-item active btn"><a href="https://www.youtube.com/channel/UCmKSHa1mUGlMvANnhXyW5dg" target="_blank" class="nav-link fa fa-youtube"></a></li>
+                    <li class="nav-item active btn"><a href="https://narbeli.tumblr.com/" target="_blank" class="nav-link fa fa-tumblr"></a></li>
+                    <li class="nav-item active btn"><a href="https://www.instagram.com/narbeli_/" target="_blank" class="nav-link fa fa-instagram"></a></li>
+                </ul>
+                <div class="float-right blockquote-footer">
+                <p>Narbeli&copy - 2020</p>
+                </div>
+            </div>		
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </body>
+</html>
