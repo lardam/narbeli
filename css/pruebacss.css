@@ -1,0 +1,182 @@
+body {
+  background-color: #043b53;
+  color: white;
+  margin: 0; }
+
+header {
+  color: white;
+  background-color: #043b53;
+  padding-top: 1%;
+  max-height: 5%; }
+  header nav {
+    justify-content: space-between;
+    color: white;
+    text-decoration: none; }
+    header nav a img {
+      max-width: 25%;
+      max-height: 16%;
+      padding: 0,5%; }
+    header nav #menu ul #navblanco {
+      height: 100%; }
+      header nav #menu ul #navblanco:hover {
+        background-color: #011c27;
+        color: white; }
+      header nav #menu ul #navblanco a {
+        color: white;
+        text-decoration: none; }
+    header nav #menu ul #navcont {
+      background-color: white; }
+      header nav #menu ul #navcont a {
+        color: #011c27;
+        text-decoration: none; }
+
+#middle {
+  background-color: #043b53;
+  color: white;
+  position: relative;
+  min-height: 100vh; }
+  #middle #info-narbeli {
+    background-color: orange;
+    padding: 3%;
+    margin-top: 7%; }
+
+#feed-left {
+  margin-top: 7%;
+  background-color: #043b53;
+  padding: 3%; }
+  #feed-left #feed {
+    background-color: #043b53;
+    padding: 3%;
+    width: 60%;
+    margin-left: 0;
+    margin-right: 0; }
+    #feed-left #feed:hover {
+      background-color: #011c27;
+      transition-delay: 50ms;
+      cursor: pointer; }
+
+aside p {
+  background-color: grey;
+  grid-area: "ad";
+  margin-top: 7%;
+  padding: 50%;
+  height: 90%;
+  width: 80%; }
+
+#artistas
+ul {
+  list-style-type: none;
+  font-weight: bold;
+  padding-top: 12%;
+  padding-bottom: 10%;
+  text-align: center;
+  display: grid;
+  grid-template-areas: "parsec circo bian" "guada aquelo lucia" "ladro aftern cande";
+  justify-content: space-evenly; }
+  #artistas
+ul li {
+    width: 250px;
+    height: 250px;
+    padding-top: 45%; }
+  #artistas
+ul #parsec {
+    background-image: url(../images/parsec.png);
+    grid-area: "parsec"; }
+  #artistas
+ul #circo {
+    background-image: url(../images/circo_demons.png);
+    grid-area: "circo"; }
+  #artistas
+ul #bian {
+    background-image: url(../images/bianxhi.png);
+    grid-area: "bian"; }
+  #artistas
+ul #guada {
+    background-image: url(../images/guada.png);
+    grid-area: "guada"; }
+  #artistas
+ul #aquelo {
+    background-image: url(../images/aquelo.png);
+    color: #b90d63;
+    grid-area: "aquelo"; }
+  #artistas
+ul #lucia {
+    background-image: url(../images/lu.png);
+    color: #141479;
+    grid-area: "lucia"; }
+  #artistas
+ul #ladro {
+    background-image: url(../images/ladro.png);
+    color: black;
+    grid-area: "ladro"; }
+  #artistas
+ul #aftern {
+    background-image: url(../images/an.png);
+    color: black;
+    grid-area: "aftern"; }
+  #artistas
+ul #cande {
+    background-image: url(../images/cande.png);
+    color: #f1d222;
+    grid-area: "cande"; }
+  #artistas
+ul div {
+    margin-bottom: 5%; }
+    #artistas
+ul div:hover {
+      font-size: 18px;
+      transform: ease 50ms;
+      cursor: pointer;
+      opacity: 60%; }
+
+#fechas {
+  background-color: #011c27;
+  color: white;
+  font-weight: bold;
+  margin-top: 15%;
+  text-align: center; }
+  #fechas #border-table {
+    background-color: white;
+    color: #011c27; }
+
+#modal_contacto {
+  background-color: silver;
+  color: black; }
+
+#temario ul {
+  list-style-type: none;
+  padding-top: 15%;
+  padding-bottom: 5%;
+  text-align: center; }
+  #temario ul li {
+    background-color: orange;
+    border: white solid 1px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: auto auto 1% auto;
+    width: 60%;
+    cursor: pointer; }
+    #temario ul li :hover {
+      opacity: 70%;
+      color: white;
+      background-color: #043b53;
+      transition: 300ms; }
+    #temario ul li a {
+      text-decoration: none;
+      color: white; }
+
+footer {
+  background-image: linear-gradient(to top, #011c27, #043b53);
+  height: auto;
+  position: relative;
+  bottom: 0; }
+  footer .fa {
+    padding: 20px;
+    font-size: 16px;
+    width: 5%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%; }
+    footer .fa:hover {
+      color: orange; }
