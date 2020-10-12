@@ -18,11 +18,11 @@ header {
         color: white;
         text-decoration: none;
         a img {
-            max-width: 25%;
-            max-height: 16%;
-            padding: 0,5%;
+            max-width: 235px;
+            max-height: 165px;
         }
         #menu {
+            margin-left: 0%;
             ul{ 
                 #navblanco {
                     height: 100%;
@@ -77,13 +77,13 @@ header {
     }
 }
 
-aside p {
-    background-color: grey;
+aside {
     grid-area: "ad";
-    margin-top: 7%;
-    padding: 50%;
-    height: 90%;
-    width: 80%;
+    max-width: 550px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: grey;
+    margin: 7%;
 }
 
 #artistas
@@ -221,5 +221,37 @@ footer {
         &:hover {
             color: orange;
         }
+    }
+}
+
+@media (max-width: 600px) {
+    div {
+        aside {
+            min-width: 95%;
+            background-color: red;
+            height: 150px;
+        }
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1198px) {
+    header nav#menu {
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1640px) {
+    div {
+        aside {
+            min-width: 95%;
+            min-height: 35%;
+            background-color: salmon;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    header nav #menu {
+            margin-left: 30%;
     }
 }

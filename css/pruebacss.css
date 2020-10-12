@@ -13,22 +13,23 @@ header {
     color: white;
     text-decoration: none; }
     header nav a img {
-      max-width: 25%;
-      max-height: 16%;
-      padding: 0,5%; }
-    header nav #menu ul #navblanco {
-      height: 100%; }
-      header nav #menu ul #navblanco:hover {
-        background-color: #011c27;
-        color: white; }
-      header nav #menu ul #navblanco a {
-        color: white;
-        text-decoration: none; }
-    header nav #menu ul #navcont {
-      background-color: white; }
-      header nav #menu ul #navcont a {
-        color: #011c27;
-        text-decoration: none; }
+      max-width: 235px;
+      max-height: 165px; }
+    header nav #menu {
+      margin-left: 0%; }
+      header nav #menu ul #navblanco {
+        height: 100%; }
+        header nav #menu ul #navblanco:hover {
+          background-color: #011c27;
+          color: white; }
+        header nav #menu ul #navblanco a {
+          color: white;
+          text-decoration: none; }
+      header nav #menu ul #navcont {
+        background-color: white; }
+        header nav #menu ul #navcont a {
+          color: #011c27;
+          text-decoration: none; }
 
 #middle {
   background-color: #043b53;
@@ -55,13 +56,13 @@ header {
       transition-delay: 50ms;
       cursor: pointer; }
 
-aside p {
-  background-color: grey;
+aside {
   grid-area: "ad";
-  margin-top: 7%;
-  padding: 50%;
-  height: 90%;
-  width: 80%; }
+  max-width: 550px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: grey;
+  margin: 7%; }
 
 #artistas
 ul {
@@ -180,3 +181,23 @@ footer {
     border-radius: 50%; }
     footer .fa:hover {
       color: orange; }
+
+@media (max-width: 600px) {
+  div aside {
+    min-width: 95%;
+    background-color: red;
+    height: 150px; } }
+
+@media (min-width: 990px) and (max-width: 1198px) {
+  header nav#menu {
+    margin-left: 15%; } }
+
+@media (min-width: 601px) and (max-width: 1640px) {
+  div aside {
+    min-width: 95%;
+    min-height: 35%;
+    background-color: salmon; } }
+
+@media (min-width: 1000px) {
+  header nav #menu {
+    margin-left: 30%; } }
