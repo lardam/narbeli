@@ -1,11 +1,12 @@
 $blue: #043b53;
 $dark-blue: #011c27;
-$base-font-size: 16px;
+$base-font-size: 14px;
 
 body{
     background-color: $blue;
     color: white;
     margin: 0;
+    font-size: $base-font-size;
 }
 
 header {
@@ -55,7 +56,31 @@ header {
     #info-narbeli {
         background-color: orange;
         padding: 3%;
-        margin-top: 7%;
+        margin-top: 15%;
+        
+    }
+    #ad {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        p {
+            background-color: palevioletred;
+            height: 60px;
+            text-align: center;
+        }
+    }
+}
+
+#middle-index {
+        #ad-index {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        p {
+            background-color: palevioletred;
+            height: 60px;
+            text-align: center;
+        }
     }
 }
 
@@ -77,83 +102,66 @@ header {
     }
 }
 
-aside {
-    grid-area: "ad";
-    max-width: 550px;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: grey;
-    margin: 7%;
-}
-
-#artistas
-    ul{
-        list-style-type: none;
-        font-weight: bold;
-        padding-top: 12%;
-        padding-bottom: 10%;
-        text-align: center;
-        display: grid;
-        grid-template-areas:
-        "parsec circo bian"
-        "guada aquelo lucia"
-        "ladro aftern cande";
-        justify-content: space-evenly;
-        li{
-            width: 250px;
-            height: 250px;
-            padding-top: 45%;
-        }     
-        #parsec {
-            background-image: url(../images/parsec.png);
-            grid-area: "parsec";
-        }
-        #circo {
-            background-image: url(../images/circo_demons.png);
-            grid-area: "circo";
-        }
-        #bian {
-            background-image: url(../images/bianxhi.png);
-            grid-area: "bian";
+#artistas {
+        ul {
+            list-style-type: none;
+            font-weight: bold;
+            padding-top: 12%;
+            padding-bottom: 10%;
+            text-align: center;
+            li {
+                max-width: 250px;
+                min-height: 250px;
+                margin-bottom: 5%;
+                &:hover {
+                    font-size: 18px;
+                    transform: ease 50ms;
+                    cursor: pointer;
+                    opacity: 60%;
+                a {
+                    min-width: 250px;
+                    min-height: 250px;
+                    padding-top: 45%;
+                    p {
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
         }   
-        #guada {
-            background-image: url(../images/guada.png);
-            grid-area: "guada";
+            #parsec {
+                background-image: url(../images/parsec.png);
+            }
+            #circo {
+                background-image: url(../images/circo_demons.png);
+            }
+            #bian {
+                background-image: url(../images/bianxhi.png);
+            }   
+            #guada {
+                background-image: url(../images/guada.png);
+            }
+            #aquelo {
+                background-image: url(../images/aquelo.png);
+                color: rgb(185, 13, 99);
+            }
+            #lucia {
+                background-image: url(../images/lu.png);
+                color: rgb(20, 20, 121);  
+            }
+            #ladro {
+                background-image: url(../images/ladro.png);
+                color: black;
+            }
+            #aftern {
+                background-image: url(../images/an.png);
+                color: black;
+            }
+            #cande {
+                background-image: url(../images/cande.png);
+                color: rgb(241, 210, 34);
+            }
         }
-        #aquelo {
-            background-image: url(../images/aquelo.png);
-            color: rgb(185, 13, 99);
-            grid-area: "aquelo";
-        }
-        #lucia {
-            background-image: url(../images/lu.png);
-            color: rgb(20, 20, 121);
-            grid-area: "lucia";
-        }
-        #ladro {
-            background-image: url(../images/ladro.png);
-            color: black;
-            grid-area: "ladro";
-        }
-        #aftern {
-            background-image: url(../images/an.png);
-            color: black;
-            grid-area: "aftern";
-        }
-        #cande {
-            background-image: url(../images/cande.png);
-            color: rgb(241, 210, 34);
-            grid-area: "cande";
-        }
-    div {
-        margin-bottom: 5%;
-        &:hover {
-            font-size: 18px;
-            transform: ease 50ms;
-            cursor: pointer;
-            opacity: 60%;
-        }
-    }
 }
 
 #fechas {
@@ -162,7 +170,6 @@ aside {
     font-weight: bold;
     margin-top: 15%;
     text-align: center;
-
     #border-table {
         background-color: white;
         color: #011c27;
@@ -174,33 +181,37 @@ aside {
     color: black;
 }
 
-#temario ul {
-    list-style-type: none;
-    padding-top: 15%;
-    padding-bottom: 5%;
-    text-align: center;
-
+#temario {
+    ul {
+        list-style-type: none;
+        padding-top: 15%;
+        padding-left: 0;
+        text-align: center;
         li {
             background-color: orange;
             border: white solid 1px;
             padding-top: 1%;
             padding-bottom: 1%;
             margin: auto auto 1% auto;
-            width: 60%;
+            width: 90%;
             cursor: pointer;
-
-            :hover {
-                opacity: 70%;
+            &:hover {
                 color: white;
                 background-color: #043b53;
                 transition: 300ms;
             }
-
             a {
                 text-decoration: none;
                 color: white;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
             }
-        
+        }
     }
 }
 
@@ -224,34 +235,143 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
+    #middle {
+        #ad {
+            margin-top: 120px;
+            height: 320px;
+            p {
+                height: 100%;
+            }
+        }
+    }
+    #middle-index {
+        #ad-index {
+            margin-top: 80px;
+            height: 320px;
+            p {
+                height: 100%;
+            }
+        }
+    }
+    #temario {
+        margin: 0;
+        ul {
+            li {
+                width: 100%;
+                margin: auto auto 3% auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    body {
+        font-size: 16px;
+    }
     div {
+        margin-right: 15%;
         aside {
-            min-width: 95%;
-            background-color: red;
+            min-width: 90%;
+            background-color: orange;
             height: 150px;
         }
     }
-}
-
-@media (min-width: 990px) and (max-width: 1198px) {
-    header nav#menu {
-        margin-left: 15%;
+    #middle {
+        #ad {
+            margin-top: 120px;
+            p {
+                height: 120px;
+            }
+        }
     }
-}
-
-@media (min-width: 601px) and (max-width: 1640px) {
-    div {
-        aside {
-            min-width: 95%;
-            min-height: 35%;
-            background-color: salmon;
+    #middle-index {
+        #ad-index {
+            margin-top: 120px;
+            p  {
+                height: 120px;
+            }
+        }
+    }
+    #temario {
+        ul {
+            li {
+                margin: auto auto 2% auto;
+            }
+        }
+    }
+    #artistas {
+        ul {
+            #lucia {
+                display: none;
+            }
         }
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
     header nav #menu {
-            margin-left: 30%;
+        margin-left: 30%;
+    }
+    #temario {
+        ul {
+            li {
+                margin: auto auto 1,5% auto;
+            }
+        }
+    }
+    #artistas {
+        ul {
+            list-style-type: none;
+            font-weight: bold;
+            padding-top: 12%;
+            padding-bottom: 10%;
+            text-align: center;
+            display: grid;
+            grid-template-areas:
+            "parsec circo bian"
+            "guada aquelo lucia"
+            "ladro aftern cande";
+            justify-content: space-evenly;
+            li {
+                width: 250px;
+                height: 250px;
+                padding-top: 45%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #middle {
+        #ad {
+            margin-top: 200px;
+            p {
+                height: 200px;
+            }
+        }
+    }
+    #middle-index {
+        position: relative;
+        min-height: 100vh;
+        #index {
+        display: grid;
+        grid-template-areas: "feed feed ad";
+        #feed-left {
+                grid-area: "feed";
+            }
+        #ad-index {
+            grid-area: "ad";
+            height: 100%;
+                p {
+                    width: 280px;
+                    height: 650px;
+                }
+            }
+        }
     }
 }

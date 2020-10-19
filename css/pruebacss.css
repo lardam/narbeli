@@ -1,7 +1,8 @@
 body {
   background-color: #043b53;
   color: white;
-  margin: 0; }
+  margin: 0;
+  font-size: 14px; }
 
 header {
   color: white;
@@ -39,7 +40,24 @@ header {
   #middle #info-narbeli {
     background-color: orange;
     padding: 3%;
-    margin-top: 7%; }
+    margin-top: 15%; }
+  #middle #ad {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px; }
+    #middle #ad p {
+      background-color: palevioletred;
+      height: 60px;
+      text-align: center; }
+
+#middle-index #ad-index {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 10px; }
+  #middle-index #ad-index p {
+    background-color: palevioletred;
+    height: 60px;
+    text-align: center; }
 
 #feed-left {
   margin-top: 7%;
@@ -56,79 +74,51 @@ header {
       transition-delay: 50ms;
       cursor: pointer; }
 
-aside {
-  grid-area: "ad";
-  max-width: 550px;
-  padding-left: 50px;
-  padding-right: 50px;
-  background-color: grey;
-  margin: 7%; }
-
-#artistas
-ul {
+#artistas ul {
   list-style-type: none;
   font-weight: bold;
   padding-top: 12%;
   padding-bottom: 10%;
-  text-align: center;
-  display: grid;
-  grid-template-areas: "parsec circo bian" "guada aquelo lucia" "ladro aftern cande";
-  justify-content: space-evenly; }
-  #artistas
-ul li {
-    width: 250px;
-    height: 250px;
-    padding-top: 45%; }
-  #artistas
-ul #parsec {
-    background-image: url(../images/parsec.png);
-    grid-area: "parsec"; }
-  #artistas
-ul #circo {
-    background-image: url(../images/circo_demons.png);
-    grid-area: "circo"; }
-  #artistas
-ul #bian {
-    background-image: url(../images/bianxhi.png);
-    grid-area: "bian"; }
-  #artistas
-ul #guada {
-    background-image: url(../images/guada.png);
-    grid-area: "guada"; }
-  #artistas
-ul #aquelo {
-    background-image: url(../images/aquelo.png);
-    color: #b90d63;
-    grid-area: "aquelo"; }
-  #artistas
-ul #lucia {
-    background-image: url(../images/lu.png);
-    color: #141479;
-    grid-area: "lucia"; }
-  #artistas
-ul #ladro {
-    background-image: url(../images/ladro.png);
-    color: black;
-    grid-area: "ladro"; }
-  #artistas
-ul #aftern {
-    background-image: url(../images/an.png);
-    color: black;
-    grid-area: "aftern"; }
-  #artistas
-ul #cande {
-    background-image: url(../images/cande.png);
-    color: #f1d222;
-    grid-area: "cande"; }
-  #artistas
-ul div {
+  text-align: center; }
+  #artistas ul li {
+    max-width: 250px;
+    min-height: 250px;
     margin-bottom: 5%; }
-    #artistas
-ul div:hover {
+    #artistas ul li:hover {
       font-size: 18px;
       transform: ease 50ms;
       cursor: pointer;
       opacity: 60%; }
+      #artistas ul li:hover a {
+        min-width: 250px;
+        min-height: 250px;
+        padding-top: 45%; }
+        #artistas ul li:hover a p {
+          width: 250px;
+          height: 250px; }
+  #artistas ul #parsec {
+    background-image: url(../images/parsec.png); }
+  #artistas ul #circo {
+    background-image: url(../images/circo_demons.png); }
+  #artistas ul #bian {
+    background-image: url(../images/bianxhi.png); }
+  #artistas ul #guada {
+    background-image: url(../images/guada.png); }
+  #artistas ul #aquelo {
+    background-image: url(../images/aquelo.png);
+    color: #b90d63; }
+  #artistas ul #lucia {
+    background-image: url(../images/lu.png);
+    color: #141479; }
+  #artistas ul #ladro {
+    background-image: url(../images/ladro.png);
+    color: black; }
+  #artistas ul #aftern {
+    background-image: url(../images/an.png);
+    color: black; }
+  #artistas ul #cande {
+    background-image: url(../images/cande.png);
+    color: #f1d222; }
 
 #fechas {
   background-color: #011c27;
@@ -147,7 +137,7 @@ ul div:hover {
 #temario ul {
   list-style-type: none;
   padding-top: 15%;
-  padding-bottom: 5%;
+  padding-left: 0;
   text-align: center; }
   #temario ul li {
     background-color: orange;
@@ -155,16 +145,21 @@ ul div:hover {
     padding-top: 1%;
     padding-bottom: 1%;
     margin: auto auto 1% auto;
-    width: 60%;
+    width: 90%;
     cursor: pointer; }
-    #temario ul li :hover {
-      opacity: 70%;
+    #temario ul li:hover {
       color: white;
       background-color: #043b53;
       transition: 300ms; }
     #temario ul li a {
       text-decoration: none;
-      color: white; }
+      color: white;
+      width: 100%;
+      height: 100%;
+      margin: 0; }
+      #temario ul li a p {
+        margin: 0;
+        padding: 0; }
 
 footer {
   background-image: linear-gradient(to top, #011c27, #043b53);
@@ -173,7 +168,7 @@ footer {
   bottom: 0; }
   footer .fa {
     padding: 20px;
-    font-size: 16px;
+    font-size: 14px;
     width: 5%;
     text-align: center;
     text-decoration: none;
@@ -182,22 +177,80 @@ footer {
     footer .fa:hover {
       color: orange; }
 
-@media (max-width: 600px) {
-  div aside {
-    min-width: 95%;
-    background-color: red;
-    height: 150px; } }
+@media (max-width: 576px) {
+  #middle #ad {
+    margin-top: 120px;
+    height: 320px; }
+    #middle #ad p {
+      height: 100%; }
+  #middle-index #ad-index {
+    margin-top: 80px;
+    height: 320px; }
+    #middle-index #ad-index p {
+      height: 100%; }
+  #temario {
+    margin: 0; }
+    #temario ul li {
+      width: 100%;
+      margin: auto auto 3% auto; } }
 
-@media (min-width: 990px) and (max-width: 1198px) {
-  header nav#menu {
-    margin-left: 15%; } }
+@media (min-width: 576px) {
+  body {
+    font-size: 16px; }
+  div {
+    margin-right: 15%; }
+    div aside {
+      min-width: 90%;
+      background-color: orange;
+      height: 150px; }
+  #middle #ad {
+    margin-top: 120px; }
+    #middle #ad p {
+      height: 120px; }
+  #middle-index #ad-index {
+    margin-top: 120px; }
+    #middle-index #ad-index p {
+      height: 120px; }
+  #temario ul li {
+    margin: auto auto 2% auto; }
+  #artistas ul #lucia {
+    display: none; } }
 
-@media (min-width: 601px) and (max-width: 1640px) {
-  div aside {
-    min-width: 95%;
-    min-height: 35%;
-    background-color: salmon; } }
-
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
   header nav #menu {
-    margin-left: 30%; } }
+    margin-left: 30%; }
+  #temario ul li {
+    margin: auto auto 1,5% auto; }
+  #artistas ul {
+    list-style-type: none;
+    font-weight: bold;
+    padding-top: 12%;
+    padding-bottom: 10%;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "parsec circo bian" "guada aquelo lucia" "ladro aftern cande";
+    justify-content: space-evenly; }
+    #artistas ul li {
+      width: 250px;
+      height: 250px;
+      padding-top: 45%; } }
+
+@media (min-width: 1200px) {
+  #middle #ad {
+    margin-top: 200px; }
+    #middle #ad p {
+      height: 200px; }
+  #middle-index {
+    position: relative;
+    min-height: 100vh; }
+    #middle-index #index {
+      display: grid;
+      grid-template-areas: "feed feed ad"; }
+      #middle-index #index #feed-left {
+        grid-area: "feed"; }
+      #middle-index #index #ad-index {
+        grid-area: "ad";
+        height: 100%; }
+        #middle-index #index #ad-index p {
+          width: 280px;
+          height: 650px; } }
