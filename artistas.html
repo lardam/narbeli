@@ -13,7 +13,7 @@
         <header class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light container">
                 <a class="navbar-brand" href="index.html"><img src="images/logo3.png" class="logo" id="logo" alt="narlogo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menu">
@@ -40,7 +40,10 @@
                 <li id="aftern"><a><p>After Nieto</p></a></li>
                 <li id="cande"><a><p>Cande Maio</p></a></li>
             </ul>
-           </div> 
+           </div>
+           <div class="container" id="ad">
+            <p>Ad</p>
+        </div>
         </div>
         <div class="modal fade" id="contact_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -52,7 +55,7 @@
                     </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form action="index.html" method="POST">
                             <div class="form-row">
                                 <div class="col"><input type="text" placeholder="Nombre" name="nombre" class="form-control"><br></div>
                                 <div class="col"><input type="text" placeholder="Apellido" name="apellido" class="form-control"><br></div>
@@ -74,15 +77,15 @@
                                     <option value="1">Grabación y master</option>
                                     <option value="2">Mastering</option>
                                     <option value="3">Grabación, master y mezcla</option>
-                                  </select>
+                                </select>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Enviar</button>
-                        <button type="button" class="btn btn-secondary" value="#">Borrar</button>
-                    </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="reset" class="btn btn-secondary" value="#">Borrar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
